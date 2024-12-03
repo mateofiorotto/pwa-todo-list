@@ -1,0 +1,195 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: white;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    color: black;
+    }
+
+  header {
+    width: 100%;
+    background-color: black;
+    color: white;
+  }
+
+  h1 {
+    font-weight: bold;
+  }
+
+  .tareas {
+    margin: auto;
+    padding: 0;
+    overflow-y: auto;
+    max-height: 65vh;
+  }
+  
+  .tareas li {
+    background: black;
+    color: white;
+    list-style: none;
+    padding: 2em;
+    border-radius: 5px;
+}
+  
+  .borrar {
+    cursor: pointer;
+  }
+
+  #tarea {
+    padding: 1em !important;
+    margin: 1em 0;
+    background-color: rgb(189, 203, 203); 
+  }
+
+  #tarea::placeholder {
+    color: rgb(0, 0, 0);
+    opacity: 1;
+  }
+
+  #tarea::-ms-input-placeholder {
+    color: rgb(0, 0, 0);
+  }
+
+  .btn {
+    margin-top: 1em;
+    padding: 1em;
+    font-weight: bold;
+    border-radius: 10px; 
+}
+
+  .btn-tareas {
+    color: white;
+    margin-right: 1em;
+    background-color: black;
+  }
+
+  .btn-vaciar {
+    background-color: none;
+    color: black;
+    border-color: black;
+  }
+  
+  .btn-vaciar:hover {
+    background-color: black;
+    color: #fff;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn-tareas:hover {
+    background-color: lime;
+    transition: all 0.3s ease-in-out;
+  }
+  
+
+.container-iconos {
+    display: flex;
+    gap: 10px !important;
+}
+
+.bi-trash-fill {
+    color: rgb(144, 57, 57);
+    transition: all 0.3s ease-in-out;
+}
+
+.bi-trash-fill:hover {
+    color: red;
+}
+
+.bi-check-circle-fill {
+    color: rgb(83, 145, 83);
+    transition: all 0.3s ease-in-out;
+}
+
+.bi-check-circle-fill:hover {
+    color: lime;
+}
+
+  i {
+    text-align: right;
+    cursor: pointer;
+  }
+
+  .bold {
+    font-weight: bold;
+  }
+
+  .completado {
+    text-decoration: line-through;
+    background-color: green !important;
+}
+
+.descompletar {
+    color: rgb(85, 84, 84);
+}
+
+.descompletar:hover {
+    color: black;
+}
+
+.block {
+    display: block;
+}
+
+.texto-iconos {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.2em;
+}
+
+label, h3 {
+  font-weight: bold;
+  font-size: 1.5em;
+}
+
+.owh {
+  word-wrap: break-word;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: normal;
+}
+
+.btn-compartir {
+  transition: 0.4s ease-in-out all;
+}
+
+.btn-compartir:hover {
+  background-color: black;
+  color: white;
+}
+
+.btn-descarga {
+  background-color: lime;
+  border: none;
+  color: black;
+  transition: 0.2s ease-in-out all;
+}
+
+.btn-descarga:hover, .suscribirse:hover {
+  background-color: blue;
+  color: white;
+}
+
+.input-error {
+  border: 2px solid red;
+}
+
+.suscribirse {
+  background-color: black;
+  color: white;
+  transition: 0.2s ease-in-out all;
+  border: none;
+}
+
+
+
+@media only screen and (max-width: 992px) {
+  .tareas {
+    max-height: 50vh;
+  }
+}
+

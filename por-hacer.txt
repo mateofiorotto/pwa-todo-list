@@ -1,0 +1,17 @@
+- LocalStorage (OK)
+ok
+
+- Boton app install (OK)
+ok
+
+- Notificaciones push
+
+
+Ok al añadir, borrar o completar una tarea. Agregar funcionalidad 
+a los botones dismiss y eso
+
+- api share
+
+ok se comparte la app. Probar si puedo mandar datos.
+
+REVISAR Y MANDAR

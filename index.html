@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#000000">
+    <!-- Bootstrap, Google Fonts y conexiones -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="icon" href="imgs/512x512.png" />
+    <link rel="manifest" href="manifest.json">
+    <title>PWA: To-Do. Fiorotto Mateo - Neto Matias - Parcial 1</title>
+  </head>
+
+  <body>
+    <header class="header mb-4">
+        <h1 class="text-center p-5">Task Manager</h1>
+    </header>
+    <div class="container pt-4">
+      <div class="row">
+
+        <div class="col-lg-3 col-md-12 mb-lg-0 mb-4">
+          <div class="d-flex flex-row">
+            <h2 class="bold">Agrega Tareas</h2>
+            <button id="btn-suscribirse" class="p-2 suscribirse ms-auto"><i class="bi bi-bell-fill"></i></button>
+        </div>
+
+        <form class="mb-4 form-container" id="formTareas">
+          <input class="form-control tarea" id="tarea" type="text" name="tarea" placeholder="Añadir tarea"/>
+          <button class="btn btn-tareas w-100">Añadir tarea</button>
+          <button type="button" class="btn btn-vaciar w-100">Vaciar Tareas</button>
+      </form>
+      
+          <button class="p-2 mb-4 btn-compartir col-12"><i class="bi bi-arrow-up-right me-3"></i>Compartir APP</button>
+          <div class="alerta" style="display: none;">
+            <button class="efecto p-2 btn-compartir col-12 alerta btn-descarga"><i class="bi bi-download me-3"></i>Instalar</button>
+          </div>
+        </div>
+        
+        <div class="col-lg-9 col-md-12">
+          <h3 id="aparecen-tareas" class="text-center">Acá apareceran tus tareas</h3>
+          <ul class="tareas row justify-content-center"></ul>
+        </div>
+        
+          
+      </div>      
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="assets/main.js" defer></script>
+  </body>
+</html>
