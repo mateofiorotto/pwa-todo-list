@@ -32,3 +32,8 @@ Una lista To-Do con funcionalidades de una PWA
 - **CSS**
 - **Bootstrap**
 - **JavaScript**
+
+---
+
+## 🌐 Test Online
+You can test the project online here: [pwa-to-do-list.netlify.app](https://pwa-to-do-list.netlify.app)
